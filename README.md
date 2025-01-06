@@ -1,4 +1,4 @@
-# Sprite Sheet Tools
+![image](https://github.com/user-attachments/assets/721a6e3c-7355-4f09-b001-ff6d623730f0)# Sprite Sheet Tools
 
 This is a Python-based library of tools for splitting and generating sprite sheets. This repository provides utilities for splitting a large sprite sheet into individual sprites and creating sprite sheets from individual images. It's designed for game developers, artists, and anyone working with 2D assets.
 
@@ -105,6 +105,10 @@ This command will:
 - Create a sprite sheet with 5 rows and 5 columns.
 - Apply 2 pixel padding between sprites.
 - Save the result as sprite_sheet.png in the output directory. sprite_sheet-metadata.json and sprite_sheet-labels.txt files will be included in the same directory.
+
+#### Output Example
+![2x2_sprite_sheet_padded_20](https://github.com/user-attachments/assets/7896c4ce-de18-4619-b8a7-2dd7c5f600e7)
+
 
 #### Notes
 - **Sprite Size Consistency**: It is recommended that all sprite images are the same size for optimal results.
