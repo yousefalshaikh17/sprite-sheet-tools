@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/721a6e3c-7355-4f09-b001-ff6d623730f0)# Sprite Sheet Tools
+# Sprite Sheet Tools
 
 This is a Python-based library of tools for splitting and generating sprite sheets. This repository provides utilities for splitting a large sprite sheet into individual sprites and creating sprite sheets from individual images. It's designed for game developers, artists, and anyone working with 2D assets.
 
