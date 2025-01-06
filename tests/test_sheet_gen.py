@@ -63,7 +63,7 @@ def test_metadata(self, metadata, expected_sheet_size, grid_size, padding, sprit
     
     self.assertEqual(
         sprite_size,
-        (metadata["sprite_size"]["width"], metadata["sprite_size"]["weight"]),
+        (metadata["sprite_size"]["width"], metadata["sprite_size"]["height"]),
         msg="sprite_sheet_split.test_sprite_sheet_gen1 (Metatable sprite size did not match expected sprite size.)"
         )
 
