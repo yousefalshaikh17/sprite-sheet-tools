@@ -11,13 +11,13 @@ This is a Python-based library of tools for splitting and generating sprite shee
 
 ## Installation
 
-To get started, simply clone the repository or download the necessary files.
+To get started, simply clone the repository or download the necessary files. 
 
 1. Clone this repository:
    ```bash
    git clone https://github.com/yousefalshaikh17/sprite-sheet-tools.git
    ```
-2. Install dependencies using ``pip``:
+2. Install dependencies using ``pip`` on Python 3.8+:
     ```bash
    pip install -r requirements.txt
    ```
