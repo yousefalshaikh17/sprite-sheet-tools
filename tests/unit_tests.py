@@ -15,6 +15,10 @@ def make_suite():
     suite.addTest(TestSpriteSheetSplitter('test_blank_check2'))
     suite.addTest(TestSpriteSheetSplitter('test_sprite_sheet_split1'))
     suite.addTest(TestSpriteSheetSplitter('test_sprite_sheet_split2'))
+    suite.addTest(TestSpriteSheetSplitter('test_sprite_sheet_split3'))
+    suite.addTest(TestSpriteSheetSplitter('test_sprite_sheet_split4'))
+    suite.addTest(TestSpriteSheetSplitter('test_sprite_sheet_split5'))
+    suite.addTest(TestSpriteSheetSplitter('test_sprite_sheet_split6'))
 
     suite.addTest(TestSpriteSheetGenerator('test_sprite_sheet_gen1'))
     suite.addTest(TestSpriteSheetGenerator('test_sprite_sheet_gen2'))
