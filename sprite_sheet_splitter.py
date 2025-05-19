@@ -48,18 +48,14 @@ def get_args():
                         help="separator on resulting file names when a label is provided. (Example: ' ', '-', '_')")
     
     parser.add_argument("--clear_directory",
-                        type=bool,
-                        default=False,
-                        required=False,
+                        action="store_true",
                         help="determines whether the output directory should be cleared before inserting new sprites.")
     
     parser.add_argument("--ignore_metadata",
-                        type=bool,
                         action="store_true",
                         help="determines whether to use metadata if found in the same directory.")
     
     parser.add_argument("--disinclude_blank_sprites",
-                        type=bool,
                         action="store_true",
                         help="determines whether blank sprites should be disincluded.")
     
