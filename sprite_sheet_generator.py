@@ -125,6 +125,14 @@ def command_validation(args):
     
     return None
 
+def get_sprite_order(file_name):
+    match = re.match(r'^(\d+)', file_name)
+    if match:
+        return int(match.group(1))
+    else:
+        # No number at the start, push to the bottom
+        return float('inf')
+
 def main():
     args = get_args()
     error_message = command_validation(args)
@@ -137,7 +145,9 @@ def main():
 
     def process_path(path):
         if path.is_dir():
-            for child in os.listdir(path):
+            dir_list = os.listdir(path)
+            dir_list = sorted(dir_list, key=get_sprite_order)
+            for child in dir_list:
                 process_path(pathlib.Path(os.path.join(path, child)))
         else:
             # Open image and add to sheet
