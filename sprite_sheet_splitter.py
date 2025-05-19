@@ -90,22 +90,22 @@ def get_image_section(image, position, size):
     
     return cropped_img
 
-def split_sprite_sheet(image, size, padding = (0,0)):
-
+def split_sprite_sheet(image, size, padding=(0, 0)):
     sprite_width, sprite_height = size
     padding_x, padding_y = padding
 
     images = []
 
-    image_index = 0
-    for y in range(0, image.size[0] - sprite_width + 1, sprite_width + padding_x):
-        for x in range(0, image.size[1] - sprite_height + 1, sprite_height + padding_y):
-            image_index += 1
+    image_width, image_height = image.size
 
-            cropped_img = get_image_section(image, (x,y), size)
+    for y in range(0, image_height - sprite_height + 1, sprite_height + padding_y):
+        for x in range(0, image_width - sprite_width + 1, sprite_width + padding_x):
+            box = (x, y, x + sprite_width, y + sprite_height)
+            cropped_img = image.crop(box)
             images.append(cropped_img)
-    
+
     return images
+
 
 def image_is_blank(image):
     """
